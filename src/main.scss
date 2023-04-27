@@ -1,0 +1,270 @@
+@import 'fonts.scss';
+@import 'themes.scss';
+
+// bootstrap
+// configuration
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+// layout & components
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/dropdown';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/pagination';
+@import '../node_modules/bootstrap/scss/placeholders';
+@import '../node_modules/bootstrap/scss/progress';
+@import '../node_modules/bootstrap/scss/accordion';
+@import '../node_modules/bootstrap/scss/transitions';
+@import '../node_modules/bootstrap/scss/modal';
+@import '../node_modules/bootstrap/scss/close';
+@import '../node_modules/bootstrap/scss/alert';
+@import '../node_modules/bootstrap/scss/tables';
+@import '../node_modules/bootstrap/scss/spinners';
+// helpers
+@import '../node_modules/bootstrap/scss/helpers';
+@import '../node_modules/bootstrap/scss/utilities/api';
+
+body {
+    color: var(--color-main) !important;
+    background-color: var(--color-background);
+}
+
+a {
+    color: var(--color-main);
+
+    &:hover {
+        color: var(--color-custom-hover);
+    }
+}
+
+input {
+    background-color: var(--color-background) !important;
+}
+
+hr {
+    margin: 0.5rem;
+}
+
+kbd {
+    color: var(--color-background);
+    background-color: var(--color-main);
+}
+
+table {
+    color: var(--color-main) !important;
+    border-color: var(--color-hover) !important;
+}
+
+footer {
+    background-color: var(--color-footer-background);
+}
+
+.card {
+    background-color: var(--color-background);
+}
+
+.card-body {
+    padding: 0.5rem 0;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body h5 {
+    font-weight: 500;
+}
+
+.btn {
+    border: var(--border);
+    background-color: var(--color-main);
+    color: var(--color-background) !important;
+
+    &.show,
+    &:focus,
+    &:active,
+    &:hover {
+        background-color: var(--color-main) !important;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.btn-close {
+    background: var(--modal-btn-close);
+    opacity: 1;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.text-muted {
+    color: var(--color-text-muted) !important;
+}
+
+.form-check-input:checked[type='checkbox'] {
+    background-image: var(--input-checkbox);
+}
+
+.form-check-input:checked[type='radio'] {
+    background-image: var(--input-radio);
+}
+
+.form-check-label {
+    color: var(--color-main);
+    user-select: none;
+}
+
+.form-check-input {
+    border-color: var(--color-main);
+
+    &:focus {
+        border-color: var(--color-main);
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        border-color: var(--color-main);
+    }
+
+    &:checked {
+        border-color: var(--color-main);
+    }
+}
+
+// custom classes
+:global(.result-item-active) {
+    background-color: var(--color-hover);
+}
+
+:global(.msg) {
+    background-color: var(--color-background);
+}
+
+#icon-clipboard {
+    display: block;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// video.js overwrites
+.video-js .vjs-current-time,
+.vjs-no-flex .vjs-current-time,
+.vjs-time-divider,
+.video-js .vjs-duration,
+.vjs-no-flex .vjs-duration {
+    display: block !important;
+}
+
+.vjs-remaining-time.vjs-time-control.vjs-control {
+    display: none !important;
+}
+
+.vjs-control-bar {
+    font-family: $font-family-sans-serif;
+    font-size: 140%;
+    background: rgb(0, 0, 0) !important;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.58) 20%,
+            rgba(255, 255, 255, 0) 95%) !important;
+}
+
+.vjs-menu li {
+    font-size: 1.1em;
+    padding: 0.1em;
+}
+
+.vjs-menu-content {
+    max-height: none !important;
+}
+
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content,
+.video-js .vjs-volume-vertical {
+    background-color: rgba(0, 0, 0, 0.58) !important;
+}
+
+.vjs-big-play-centered .vjs-big-play-button {
+    margin-top: -0.75em !important;
+    margin-left: -0.8em !important;
+}
+
+.video-js .vjs-big-play-button {
+    height: 1.5em !important;
+    width: 1.5em !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(26, 26, 26, 0.9) !important;
+    border-radius: 1em !important;
+    line-height: 1.4em !important;
+}
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+}
+
+// media queries
+@media screen and (min-width: 768px) {
+    .col-pages {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-navbar {
+        margin-top: 1.5rem;
+    }
+}
+
+// logo
+img.logo {
+    border-radius: 10% !important;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        animation: spin 1s infinite linear;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+::-moz-selection {
+    /* Code für Firefox */
+    color: white !important;
+    background: gray !important;
+}
+
+::selection {
+    color: white !important;
+    background: gray !important;
+}

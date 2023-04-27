@@ -1,0 +1,102 @@
+/* Rubik light */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/Rubik-Light.ttf) format('truetype');
+}
+
+/* Rubik regular */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Rubik-Regular.ttf) format('truetype');
+}
+
+/* Rubik medium */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Rubik-Medium.ttf) format('truetype');
+}
+
+/* Rubik Bold */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Rubik-Bold.ttf) format('truetype');
+}
+
+/* Rubik Black */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(/fonts/Rubik-Black.ttf) format('truetype');
+}
+
+
+// =================== Inter Font =================== \\
+
+/* Inter 300 */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Inter-v12-latin-300.woff2) format('woff2'), /* Super Modern Browsers */
+         url(/fonts/Inter-v12-latin-300.woff) format('woff'), /* Modern Browsers */
+         url(/fonts/Inter-v12-latin-300.ttf) format('truetype'), /* Safari, Android, iOS */
+  }
+
+  /* Inter 400 */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Inter-v12-latin-regular.woff2) format('woff2'), /* Super Modern Browsers */
+         url(/fonts/Inter-v12-latin-regular.woff) format('woff'), /* Modern Browsers */
+         url(/fonts/Inter-v12-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
+  }
+
+  /* Inter 500 */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/Inter-v12-latin-500.woff2) format('woff2'), /* Super Modern Browsers */
+         url(/fonts/Inter-v12-latin-500.woff) format('woff'), /* Modern Browsers */
+         url(/fonts/Inter-v12-latin-500.ttf) format('truetype'), /* Safari, Android, iOS */
+  }
+
+  /* Inter 700 */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Inter-v12-latin-700.woff2) format('woff2'), /* Super Modern Browsers */
+         url(/fonts/Inter-v12-latin-700.woff) format('woff'), /* Modern Browsers */
+         url(/fonts/Inter-v12-latin-700.ttf) format('truetype'), /* Safari, Android, iOS */
+  }
+
+  /* Inter 900 */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/Inter-v12-latin-900.woff2) format('woff2'), /* Super Modern Browsers */
+         url(/fonts/Inter-v12-latin-900.woff) format('woff'), /* Modern Browsers */
+         url(/fonts/Inter-v12-latin-900.ttf) format('truetype'), /* Safari, Android, iOS */
+  }

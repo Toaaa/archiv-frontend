@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USER }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: ${{ secrets.SSH_PORT }}
+                  script: |
+                      cd ~/docker/dev.schneile.tv || exit 1
+                      git pull || exit 1
+                      echo -e "VITE_BACKEND_URL=https://api.schneile.tv\nVITE_ALLOW_SEARCH_INDEXING=false" > .env
+                      docker-compose up -d --build || exit 1
+                      docker system prune -af || exit 1
+                      docker volume prune -f || exit 1

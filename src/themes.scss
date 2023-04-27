@@ -1,0 +1,166 @@
+// $font-family-base: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+// Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+// custom dark theme
+:root {
+    --color-main: #f1f1f1;
+    --color-background: #0f0f0f;
+    --color-hover: #1f1f1f;
+    --color-text-muted: #b6b6b6;
+    --color-footer-background: #070707;
+    --color-alert-success: #4cdf99;
+    --color-alert-danger: #da797a;
+    --color-alert-attention: #f6de16;
+    --color-alert-beta: #456cf7;
+    --color-matched-string: #f28e2b;
+    --color-custom-hover: #f1f1f1;
+    --border: 1px solid var(--color-main) !important;
+    --drop-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.36);
+    --toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    --accordion-button: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    --input-checkbox: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    --input-radio: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+    --modal-btn-close: transparent
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+        center/1em auto no-repeat;
+
+    // --theme-font-family: 'Rubik', $font-family-base;
+
+    // these things probably stay the same across multiple themes
+    --progress-bar-fg: #f28e2b;
+    --progress-bar-bg: #222222;
+}
+
+// custom light theme
+[data-theme='light'] {
+    --color-main: #222222;
+    --color-background: white;
+    --color-hover: #eeeeee;
+    --color-text-muted: #666666;
+    --color-footer-background: #f5f5f5;
+    --color-alert-attention: #f6de16;
+    --color-alert-beta: #456cf7;
+    --color-matched-string: #ffb266;
+    --color-custom-hover: #222222;
+    --border: 1px solid var(--color-main) !important;
+    --drop-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+    --toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    --accordion-button: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    --input-checkbox: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    --input-radio: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23000'/%3e%3c/svg%3e");
+    --modal-btn-close: transparent
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+        center/1em auto no-repeat;
+
+//    --theme-font-family: 'Rubik', $font-family-base;
+}
+
+[data-theme='twitch'] {
+    --color-main: #f1f1f1;
+    --color-background: #0f0f0f;
+    --color-hover: #1f1f1f;
+    --color-text-muted: #b6b6b6;
+    --color-nav-background:#18181b;
+    --color-footer-background: #070707;
+    --color-alert-success: #4cdf99;
+    --color-alert-danger: #db6c6e;
+    --color-alert-attention: #f6de16;
+    --color-alert-beta: #456cf7;
+    --color-matched-string: #f28e2b;
+    --color-custom-hover: #bf94ff;
+    --border: 1px solid var(--color-main) !important;
+    --drop-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.36);
+    --toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    --accordion-button: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    --input-checkbox: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    --input-radio: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+    --modal-btn-close: transparent
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+        center/1em auto no-repeat;
+
+    // these things probably stay the same across multiple themes
+    --theme-font-family: 'Inter', $font-family-base;
+    --progress-bar-fg: #883df8;
+    --progress-bar-bg: #222222;
+}
+
+// https://www.nordtheme.com/docs/colors-and-palettes
+[data-theme='nord'] {
+    --color-main: #e5e9f0;
+    --color-background: #242933;
+    --color-hover: #3b4252;
+    --color-text-muted: #d8dee9;
+    --color-footer-background: #2e3440;
+    --border: 1px solid var(--color-main) !important;
+    --color-alert-attention: #ebcb8b;
+    --color-alert-beta: #5e81ac;
+    --color-matched-string: #d08770;
+    --color-custom-hover: #e5e9f0;
+
+//    --theme-font-family: 'Rubik', $font-family-base;
+}
+
+// https://github.com/morhetz/gruvbox
+[data-theme='gruvbox'] {
+    --color-main: #fbf1c7;
+    --color-background: #282828;
+    --color-hover: #3c3836;
+    --color-text-muted: #a89984;
+    --color-footer-background: #1d2021;
+    --border: 1px solid var(--color-main) !important;
+    --color-matched-string: #d65d0e;
+    --color-alert-attention: #fabd2f;
+    --color-alert-success: #8ec07c;
+    --color-custom-hover: #fbf1c7;
+
+//    --theme-font-family: 'Rubik', $font-family-base;
+}
+
+// // https://ethanschoonover.com/solarized/
+// [data-theme='solarized'] {
+//     --color-main: #eee8d5;
+//     --color-background: #002b36;
+//     --color-hover: #073642;
+//     --color-text-muted: #93a1a1;
+//     --color-footer-background: #073642;
+//     --border: 1px solid var(--color-main) !important;
+//     --color-alert-success: #5f8700;
+// }
+
+// [data-theme='ayaya'] {
+//     --color-main: #ffffff;
+//     --color-background: #c95392;
+//     --color-hover: #c778a1;
+//     --color-text-muted: #e9e9e9;
+//     --color-footer-background: #7e335b;
+//     --progress-bar-fg: #ffb7dd;
+//     --border: 1px solid var(--color-main) !important;
+//     --color-alert-danger: #ff0060;
+//     --color-matched-string: #9d0b4f;
+// }
+
+// bootstrap vars
+$font-family-sans-serif: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1600px
+);
+$modal-content-color: var(--color-main);
+$modal-content-bg: var(--color-background);
+$dropdown-bg: var(--color-background);
+$dropdown-border-color: var(--color-main);
+$dropdown-border-width: 1px;
+$dropdown-link-color: var(--color-main);
+$dropdown-link-hover-color: var(--color-main);
+$dropdown-link-hover-custom-color: var(--color-custom-hover);
+$dropdown-link-hover-bg: var(--color-hover);
+$dropdown-padding-y: 0;
+$dropdown-link-active-color: var(--color-main);
+$dropdown-link-active-bg: var(--color-hover);
+$card-border-width: 0px;
+$grid-gutter-width: 0.5rem;
+$bs-btn-hover-bg: var(--color-hover);
