@@ -64,14 +64,17 @@
         {vod.title}
     {:then newTitle}
         {#if containsSpoilerString(newTitle)}
-            <Alert
-                  level="danger"
-                  title="Spoiler Alarm!"
-                  subtitle="Dieser Stream könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
-                />
+            <div class="container">
+                <div class="spoiler-alert-box">
+                    <Alert
+                          level="danger"
+                          title="Spoiler Alarm!"
+                          subtitle="Dieses VOD könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                        />
+                </div>
+            </div>
         {/if}
-  {/await}
-
+    {/await}
     <div class={theaterEnabled ? 'container-fluid' : 'container'}>
         <div class="mb-4">
             <div class="row">

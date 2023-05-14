@@ -46,11 +46,15 @@
         {clip.title}
     {:then newTitle}
         {#if containsSpoilerString(newTitle) || clip.game.name == "The Legend of Zelda: Tears of the Kingdom"}
-            <Alert
-                  level="danger"
-                  title="Spoiler Alarm!"
-                  subtitle="Dieser Stream könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
-                />
+            <div class="container">
+                <div class="spoiler-alert-box">
+                    <Alert
+                          level="danger"
+                          title="Spoiler Alarm!"
+                          subtitle="Dieser Clip könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                        />
+                </div>
+            </div>
         {/if}
     {/await}
     <div class="container">
