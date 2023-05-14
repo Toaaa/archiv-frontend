@@ -8,7 +8,7 @@ export async function load({ params, fetch }) {
     const resp = await response.json();
     const clip = resp.result;
     if (!clip.uuid) {
-        throw error(404, `Clip '${params.uuid}' nicht gefunden \n Vielleicht nach Vod gesucht? ${FRONTEND_URL}/vods/watch/${params.uuid}`);
+        throw error(404, `Clip '${params.uuid}' nicht gefunden`);
     }
     return { clip };
 }

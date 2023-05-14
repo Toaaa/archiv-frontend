@@ -45,7 +45,7 @@
     {#await showEmotesInTitle(clip.title, $emotes)}
         {clip.title}
     {:then newTitle}
-        {#if containsSpoilerString(newTitle)}
+        {#if containsSpoilerString(newTitle) || clip.game.name == "The Legend of Zelda: Tears of the Kingdom"}
             <Alert
                   level="danger"
                   title="Spoiler Alarm!"
