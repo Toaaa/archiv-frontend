@@ -5,6 +5,7 @@
 .pnpm-debug.log
 .svelte-kit
 .vscode
+vite.config.js.*
 
 build
 node_modules
