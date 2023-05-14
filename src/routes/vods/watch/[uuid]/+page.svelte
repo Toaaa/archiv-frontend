@@ -9,6 +9,9 @@
     import HotkeyModal from '@components/HotkeyModal.svelte';
     import SEO from '@components/SEO.svelte';
     import ClipGrid from '@components/ClipGrid.svelte';
+
+    import Alert from '@components/Alert.svelte';
+
     import VirtualList from '@sveltejs/svelte-virtual-list';
     import { emotes, showEmotesInTitle } from '@stores/emotes';
     import { theaterMode } from '@stores/main';
@@ -28,9 +31,11 @@
     let transcriptList = [];
     let transcriptStart;
     let transcriptEnd;
-    let chat = true;
+    let chat = false;
     let showChat = false;
     let theaterEnabled;
+
+    const spoilerStrings = ['TEARS', 'KINGDOM', 'TOTK', 'TEARS OF THE KINGDOM'];
 
     onMount(() => {
         time = parseShareTime(window.location.search);
@@ -41,6 +46,11 @@
         });
     });
 
+    function containsSpoilerString(title) {
+        const regex = new RegExp(spoilerStrings.join('|'), 'i');
+        return regex.test(title);
+    }
+
     function lineHasTimecode(line) {
         const matches = new RegExp('(\\d+):(\\d+):(\\d+),(\\d+)', 'g').test(line);
         return matches;
@@ -50,6 +60,18 @@
 <SEO bind:ogTags bind:statsDB />
 
 <main class="flex-shrink-0">
+    {#await showEmotesInTitle(vod.title, $emotes)}
+        {vod.title}
+    {:then newTitle}
+        {#if containsSpoilerString(newTitle)}
+            <Alert
+                  level="danger"
+                  title="Spoiler Alarm!"
+                  subtitle="Dieser Stream könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                />
+        {/if}
+  {/await}
+
     <div class={theaterEnabled ? 'container-fluid' : 'container'}>
         <div class="mb-4">
             <div class="row">
@@ -256,7 +278,7 @@
                                 fill-rule="evenodd"
                                 d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"
                             />
-                        </svg> Theater Mode
+                        </svg> Kinomodus
                     </button>
                     <HotkeyModal />
                 </p>

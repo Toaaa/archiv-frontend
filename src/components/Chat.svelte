@@ -114,7 +114,10 @@
     on:scroll={() => setScrolled()}
 >
     {#if fetchedMessages.length === 0}
-        <p class="text-center fw-bold my-2">Das Chat-Feature ist noch in Arbeit ;)</p>
+        <p class="text-center fw-bold my-2">Das Chat-Feature ist noch in Arbeit.</p>
+        <p class="text-center fw-bold my-2">Falls du diese Nachricht siehst, bedeutet das, dass keine Chatnachrichten gefunden wurden.</p>
+        <!-- <p class="text-center fw-bold my-2">Mehr Informationen dazu findest du <a href='https://www.twitch.tv/schneiletv' target="_blank" rel="noopener noreferrer">hier</a></p> -->
+        <br>
         <p class="text-center">
             <button
                 class="btn btn-sm cursor-pointer"

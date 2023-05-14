@@ -19,6 +19,7 @@
     let apiError = false;
     let beta = false;
     let dev = false;
+    let is_live = true;
 
 </script>
 
@@ -39,7 +40,7 @@
                 bind:this={dev}
                 level="attention"
                 title="Du befindest dich auf der Test Seite!"
-                subtitle="Falls du hier her weitergeleitet wurdest, obwohl du das gar nicht wolltest, bedeutet das, dass die Hauptseite nicht erreichbar ist. <br>Du kannst den Status <a href='https://status.schneile.tv/' target='_blank' class='alert-link'>hier</a> prüfen."
+                subtitle="Falls du hier her weitergeleitet wurdest, obwohl du das gar nicht wolltest, bedeutet das, dass die Hauptseite <b>momentan</b> nicht erreichbar ist. <br>Du kannst den Status <a href='https://status.schneile.tv/' target='_blank' class='alert-link'>hier</a> prüfen."
             />
         {/if}
         {#if statsDB?.result?.is_live}

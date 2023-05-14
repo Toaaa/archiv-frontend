@@ -199,42 +199,6 @@
                                     Twitch
                                 </div>
                             </li>
-                            <li class="cursor-pointer">
-                                <div
-                                    class="dropdown-item"
-                                    on:click={() => setTheme('nord')}
-                                    on:keyup={() => setTheme('nord')}
-                                >
-                                    Nord
-                                </div>
-                            </li>
-                            <li class="cursor-pointer">
-                                <div
-                                    class="dropdown-item"
-                                    on:click={() => setTheme('gruvbox')}
-                                    on:keyup={() => setTheme('gruvbox')}
-                                >
-                                    Gruvbox
-                                </div>
-                            </li>
-                            <!-- <li class="cursor-pointer">
-                                <div
-                                    class="dropdown-item"
-                                    on:click={() => setTheme('solarized')}
-                                    on:keyup={() => setTheme('solarized')}
-                                >
-                                    Solarized Dark
-                                </div>
-                            </li> -->
-                            <!-- <li class="cursor-pointer">
-                                <div
-                                    class="dropdown-item"
-                                    on:click={() => setTheme('ayaya')}
-                                    on:keyup={() => setTheme('ayaya')}
-                                >
-                                    AYAYA
-                                </div>
-                            </li> -->
                         </ul>
                     </li>
                 </ul>

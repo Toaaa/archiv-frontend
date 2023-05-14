@@ -47,64 +47,6 @@
                 '#0e9bd8',
                 '#00f593'
             ]
-        },
-        nord: {
-            grid: '#4C566A',
-            ticks: '#e5e9f0',
-            backgroundColors: [
-                '#BF616A',
-                '#D08770',
-                '#EBCB8B',
-                '#A3BE8C',
-                '#B48EAD',
-                '#8FBCBB',
-                '#88C0D0',
-                '#81A1C1',
-                '#5E81AC'
-            ]
-        },
-        gruvbox: {
-            grid: '#3c3836',
-            ticks: '#fbf1c7',
-            backgroundColors: [
-                '#cc241d',
-                '#98971a',
-                '#d79921',
-                '#458588',
-                '#b16286',
-                '#689d6a',
-                '#a89984',
-                '#504945',
-                '#f18019'
-            ]
-        },
-        // solarized: {
-        //     grid: '#073642',
-        //     ticks: '#eee8d5',
-        //     backgroundColors: [
-        //         '#b58900',
-        //         '#cb4b16',
-        //         '#dc322f',
-        //         '#d33682',
-        //         '#6c71c4',
-        //         '#268bd2',
-        //         '#2aa198',
-        //         '#859900',
-        //         '#f18019'
-        //     ]
-        // },
-        // ayaya: {
-        //     grid: '#7b1e4b',
-        //     ticks: '#ffacf7',
-        //     backgroundColors: [
-        //         '#ff00c8',
-        //         '#825f99',
-        //         '#fd4efd',
-        //         '#ff00ff',
-        //         '#A63EC5',
-        //         '#CE49BF',
-        //         '#F190B7'
-        //     ]
-        // }
+        }
     };
 </script>

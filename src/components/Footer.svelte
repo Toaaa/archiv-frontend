@@ -79,17 +79,31 @@
             <div class="col-md mt-3 mb-3">
                 <p class="mb-1 fw-bold fs-6">Archiv</p>
                 <ul class="footer-list">
+                    {#if $page.url.hostname.startsWith('dev.schneile.tv')}
                     <li>
                         <a
-                            href="https://github.com/AgileProggers/"
+                            href="https://archiv.schneile.tv/"
                             target="_blank"
                             rel="noopener noreferrer"
                             data-bs-toggle="tooltip"
-                            title="GitHub"
+                            title="Archiv"
                             class="text-decoration-none"
-                            >Github
+                            >Archiv
                         </a>
                     </li>
+                    {:else}
+                    <li>
+                        <a
+                            href="https://dev.schneile.tv/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-bs-toggle="tooltip"
+                            title="Test Archiv"
+                            class="text-decoration-none"
+                            >Testseite
+                        </a>
+                    </li>
+                    {/if}
                     <li>
                         <a
                             href="https://status.schneile.tv/"

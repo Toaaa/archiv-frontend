@@ -13,6 +13,8 @@
     import { emotes, showEmotesInTitle } from '@stores/emotes';
     import { toHHMMSS } from '/src/functions';
 
+    import Alert from '@components/Alert.svelte';
+
     export let data;
     const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
     let clip = data.clip;
@@ -25,6 +27,13 @@
         imagealt: 'Clip Thumbnail'
     };
 
+    const spoilerStrings = ['TEARS', 'KINGDOM', 'TOTK', 'TEARS OF THE KINGDOM'];
+
+    function containsSpoilerString(title) {
+        const regex = new RegExp(spoilerStrings.join('|'), 'i');
+        return regex.test(title);
+    }
+
     onMount(() => {
         time = parseShareTime(window.location.search);
     });
@@ -33,6 +42,17 @@
 <SEO bind:ogTags bind:statsDB />
 
 <main class="flex-shrink-0">
+    {#await showEmotesInTitle(clip.title, $emotes)}
+        {clip.title}
+    {:then newTitle}
+        {#if containsSpoilerString(newTitle)}
+            <Alert
+                  level="danger"
+                  title="Spoiler Alarm!"
+                  subtitle="Dieser Stream könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                />
+        {/if}
+    {/await}
     <div class="container">
         <div class="mb-4">
             <div class="row">

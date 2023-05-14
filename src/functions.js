@@ -12,7 +12,7 @@ export function formatBytes(bytes, decimals = 2) {
 export async function fetchApi(params) {
     const response = await fetch(`${BACKEND_URL}${params}`);
     const resp = await response.json();
-    // console.log(resp);
+    //console.log(resp);
     return resp;
 }
 

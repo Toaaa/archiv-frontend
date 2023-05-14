@@ -1,4 +1,5 @@
-﻿<h4 class="h4">
+﻿<!-- https://www.twitch.tv/recaps/schneiletv -->
+<h4 class="h4">
     Meist genutzte Emotes
     <small>(3)</small>
 </h4>
@@ -30,7 +31,7 @@
                     </strong>
                 </h4>
             </div>
-            <div>38468 mal</div>
+            <div>58873 mal</div>
         </div>
         <div class="col-sm-4 py-3 text-center order-sm-1 s-R8rAU0Zvn_4X">
             <div>
@@ -47,12 +48,12 @@
                     <strong>
                         <div class="col-auto p-1">
                             <img
-                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a353de85ee3d41c2a232d2fa9e437a4a/static/light/3.0"
-                                alt="schnei25GoodChad"
+                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_549a2bd3295249a48efdb8ee2fe09e60/static/light/3.0"
+                                alt="schnei25Interessant"
                                 loading="lazy"
                                 height="60"
                                 data-toggle="tooltip"
-                                title="schnei25GoodChad"
+                                title="schnei25Interessant"
                             />
                         </div>
                     </strong>
@@ -75,12 +76,12 @@
                     <strong>
                         <div class="col-auto p-1">
                             <img
-                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7aeeb887c8a64296a113ddf03a3fd559/animated/light/3.0"
-                                alt="schnei25Logo"
+                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_6a4de24d23df4dd791c5cdb3a1371809/static/light/3.0"
+                                alt="schnei25Edel"
                                 loading="lazy"
                                 height="60"
                                 data-toggle="tooltip"
-                                title="schnei25Logo"
+                                title="schnei25Edel"
                             />
                         </div>
                     </strong>

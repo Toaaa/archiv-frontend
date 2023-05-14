@@ -17,7 +17,7 @@ services:
         container_name: archiv-frontend
         build: .
         ports:
-            - 8187:3000
+            - 8030:3000
         restart: always
 ```
 
