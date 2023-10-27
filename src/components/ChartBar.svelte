@@ -64,7 +64,8 @@
                 datasets: [
                     {
                         backgroundColor: colors?.backgroundColors,
-                        data: chartValues
+                        data: chartValues,
+                        borderRadius: 10,
                     }
                 ]
             },

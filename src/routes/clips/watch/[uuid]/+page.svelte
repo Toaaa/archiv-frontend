@@ -29,6 +29,8 @@
 
     const spoilerStrings = ['TEARS', 'KINGDOM', 'TOTK', 'TEARS OF THE KINGDOM'];
 
+    const currentDate = new Date();
+ 
     function containsSpoilerString(title) {
         const regex = new RegExp(spoilerStrings.join('|'), 'i');
         return regex.test(title);
@@ -45,14 +47,14 @@
     {#await showEmotesInTitle(clip.title, $emotes)}
         {clip.title}
     {:then newTitle}
-        {#if containsSpoilerString(newTitle) || clip.game.name == "The Legend of Zelda: Tears of the Kingdom"}
+        {#if containsSpoilerString(newTitle) || clip.game.name == 'The Legend of Zelda: Tears of the Kingdom' && currentDate >= new Date('2023-05-12') && currentDate <= new Date('2023-11-12')}
             <div class="container">
                 <div class="spoiler-alert-box">
                     <Alert
-                          level="danger"
-                          title="Spoiler Alarm!"
-                          subtitle="Dieser Clip könnte Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
-                        />
+                        level="danger"
+                        title="Spoiler Alarm!"
+                        subtitle="Dieser Clip könnte Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                    />
                 </div>
             </div>
         {/if}
@@ -199,7 +201,7 @@
                                                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
                                             />
                                         </svg>
-                                        Download (~{formatBytes(clip.size)})
+                                        Download (≈{formatBytes(clip.size)})
                                     </a>
                                     <button
                                         type="button"

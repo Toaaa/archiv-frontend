@@ -290,29 +290,31 @@
             {#await fetchApi(`/emotes/?limit=500&provider=bttv`)}
                 <h4 class="h4 pt-4">BetterTTV</h4>
             {:then emotes}
-                <h4 class="h4 pt-4">
-                    BetterTTV
-                    <small>({emotes.result.length})</small>
-                </h4>
-                <div class="row">
-                    {#each emotes.result as emote}
-                        <div class="col-auto p-1">
-                            <img
-                                src={emote.url}
-                                alt={emote.name}
-                                loading="lazy"
-                                height="60"
-                                data-toggle="tooltip"
-                                title={emote.name}
-                            />
-                        </div>
-                    {/each}
-                </div>
+                {#if emotes.result.length > 0 }
+                    <h4 class="h4 pt-4">
+                        BetterTTV
+                        <small>({emotes.result.length})</small>
+                    </h4>
+                    <div class="row">
+                        {#each emotes.result as emote}
+                            <div class="col-auto p-1">
+                                <img
+                                    src={emote.url}
+                                    alt={emote.name}
+                                    loading="lazy"
+                                    height="60"
+                                    data-toggle="tooltip"
+                                    title={emote.name}
+                                />
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
             {/await}
-            {#if ffz}
-                {#await fetchApi(`/emotes/?limit=500&provider=ffz`)}
-                    <h4 class="h4 pt-4">FrankerFaceZ</h4>
-                {:then emotes}
+            {#await fetchApi(`/emotes/?limit=500&provider=ffz`)}
+                <h4 class="h4 pt-4">FrankerFaceZ</h4>
+            {:then emotes}
+                {#if emotes.result.length > 0 }
                     <h4 class="h4 pt-4">
                         FrankerFaceZ
                         <small>({emotes.result.length})</small>
@@ -331,8 +333,8 @@
                             </div>
                         {/each}
                     </div>
-                {/await}
-            {/if}
+                {/if}
+            {/await}
         </section>
     </div>
 </main>
