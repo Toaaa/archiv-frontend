@@ -32,7 +32,7 @@
                 bind:this={beta}
                 level="beta"
                 title="Wir sind in der Beta"
-                subtitle="Das Archiv ist noch sehr jung und befindet sich daher aktuell noch in der Beta. Es kann daher zu unerwarteten Komplikationen beim benutzten des Archivs kommen. Falls du Fragen oder Probleme hast, melde dich bitte bei der Kontakt-E-Mail im Footer."
+                subtitle="Das Archiv ist noch sehr jung und befindet sich daher aktuell noch in der Beta. Es kann daher zu unerwarteten Komplikationen beim benutzten des Archivs kommen. Falls du Fragen oder Probleme hast, melde dich im Discord."
             />
         {/if}
         {#if $page.url.hostname.startsWith('dev.schneile.tv')}
@@ -40,7 +40,7 @@
                 bind:this={dev}
                 level="attention"
                 title="Du befindest dich auf der Test Seite!"
-                subtitle="Falls du hier her weitergeleitet wurdest, obwohl du das gar nicht wolltest, bedeutet das, dass die Hauptseite <b>momentan</b> nicht erreichbar ist. <br>Du kannst den Status <a href='https://status.schneile.tv/' target='_blank' class='alert-link'>hier</a> prüfen."
+                subtitle="Falls du hier her weitergeleitet wurdest, obwohl du das gar nicht wolltest, bedeutet das, dass die Hauptseite momentan nicht erreichbar ist. <br>Du kannst den Status <a href='https://status.schneile.tv/' target='_blank' class='alert-link'>hier</a> prüfen."
             />
         {/if}
         {#if statsDB?.result?.is_live}

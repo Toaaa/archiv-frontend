@@ -82,7 +82,7 @@
                         </h3>
                     </div>
                 </div>
-                <p class="text-center text-muted">Keine Treffer</p>
+                <p class="text-center text-muted">Keine Treffer. <a href="faq/">VOD nicht gefunden?</a></p>
             {/if}
         {:catch}
             <div class="row mb-4">

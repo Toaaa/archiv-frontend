@@ -51,7 +51,7 @@
                     <Alert
                           level="danger"
                           title="Spoiler Alarm!"
-                          subtitle="Dieser Clip könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                          subtitle="Dieser Clip könnte Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
                         />
                 </div>
             </div>
@@ -85,7 +85,7 @@
                                 />
                             {:else}
                                 <img
-                                    src="/img/modcheck.gif"
+                                    src="/img/travoltacheck.gif"
                                     alt="Unbekanntes Spiel"
                                     loading="lazy"
                                 />

@@ -21,11 +21,11 @@
                         <div class="col-auto p-1">
                             <img
                                 src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_65df3a0d0519420085dc0397cb585175/animated/light/3.0"
-                                alt="schnei25GigaChad"
+                                alt="schneileGigaChad"
                                 loading="lazy"
                                 height="60"
                                 data-toggle="tooltip"
-                                title="schnei25GigaChad"
+                                title="schneileGigaChad"
                             />
                         </div>
                     </strong>
@@ -48,18 +48,18 @@
                     <strong>
                         <div class="col-auto p-1">
                             <img
-                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_549a2bd3295249a48efdb8ee2fe09e60/static/light/3.0"
-                                alt="schnei25Interessant"
+                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d889854a5ea64a3e8381a2c1815a4298/static/light/3.0"
+                                alt="schneileKatzelflatzel"
                                 loading="lazy"
                                 height="60"
                                 data-toggle="tooltip"
-                                title="schnei25Interessant"
+                                title="schneileKatzelflatzel"
                             />
                         </div>
                     </strong>
                 </h4>
             </div>
-            <div>1192 mal</div>
+            <div>2325 mal</div>
         </div>
         <div class="col-sm-4 py-3 text-center order-sm-3 s-R8rAU0Zvn_4X">
             <div>
@@ -76,18 +76,18 @@
                     <strong>
                         <div class="col-auto p-1">
                             <img
-                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_6a4de24d23df4dd791c5cdb3a1371809/static/light/3.0"
-                                alt="schnei25Edel"
+                                src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a353de85ee3d41c2a232d2fa9e437a4a/static/light/3.0"
+                                alt="schneileGoodChad"
                                 loading="lazy"
                                 height="60"
                                 data-toggle="tooltip"
-                                title="schnei25Edel"
+                                title="schneileGoodChad"
                             />
                         </div>
                     </strong>
                 </h4>
             </div>
-            <div>1166 mal</div>
+            <div>1355 mal</div>
         </div>
     </div>
 </div>

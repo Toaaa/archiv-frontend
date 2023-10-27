@@ -92,17 +92,47 @@
 </div>
 
 <style lang="scss">
-    .card {
-        background-color: var(--color-nav-background);
+.card {
+    background-color: var(--color-nav-background);
+    box-shadow: 7px 5px 0px var(--color-alert-success);
+}
+
+.btn {
+    background-color: var(--color-alert-success);
+    border: none;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        animation: btn-shadow 0.2s forwards;
+    }
+
+    &:not(:hover) {
+        animation: btn-shadow-reverse 0.2s forwards;
+    }
+}
+
+@keyframes btn-shadow {
+    0% {
         box-shadow: 7px 5px 0px var(--color-alert-success);
     }
-
-    .btn {
-        background-color: var(--color-alert-success);
-        border: none;
-
-        &:hover {
-            box-shadow: 7px 5px 0px var(--color-alert-success);
-        }
+    50% {
+        box-shadow: 10px 8px 0px var(--color-alert-success);
     }
+    100% {
+        box-shadow: 7px 5px 0px var(--color-alert-success);
+    }
+}
+
+@keyframes btn-shadow-reverse {
+    0% {
+        box-shadow: 7px 5px 0px var(--color-alert-success);
+    }
+    50% {
+        box-shadow: 10px 8px 0px var(--color-alert-success);
+    }
+    100% {
+        box-shadow: 0px 0px 0px var(--color-alert-success);
+    }
+}
+
 </style>

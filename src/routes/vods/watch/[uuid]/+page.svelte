@@ -31,7 +31,7 @@
     let transcriptList = [];
     let transcriptStart;
     let transcriptEnd;
-    let chat = false;
+    let chat = true;
     let showChat = false;
     let theaterEnabled;
 
@@ -69,7 +69,7 @@
                     <Alert
                           level="danger"
                           title="Spoiler Alarm!"
-                          subtitle="Dieses VOD könnte potenziell Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
+                          subtitle="Dieses VOD könnte Spoiler zu The Legend of Zelda: Tears of the Kingdom enthalten."
                         />
                 </div>
             </div>
@@ -173,7 +173,7 @@
                         </svg>
                         Metadaten
                     </button>
-                    <!-- {#if vod.transcript != ''}
+                    {#if vod.transcript != ''}
                         <button
                             class="btn btn-sm"
                             type="button"
@@ -195,7 +195,7 @@
                                 />
                             </svg> Transcript
                         </button>
-                    {/if} -->
+                    {/if}
                     <BookmarkButton uuid={vod.uuid} type="vods" />
                     <a
                         href="{BACKEND_URL}/download/vods/{vod.uuid}"

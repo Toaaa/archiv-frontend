@@ -99,7 +99,7 @@
         </div>
     {:else}
         <div class="col">
-            <img src="/img/modcheck.gif" alt="modcheck" width="110" height="110" />
+            <img src="/img/travoltacheck.gif" alt="travoltacheck" width="110" height="110" />
         </div>
     {/each}
 </div>

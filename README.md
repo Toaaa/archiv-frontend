@@ -1,28 +1,17 @@
-<div align="center" width="100%">
-    <img src="https://i.toaaa.de/i/f9dq9.png" width="128"/>
-</div>
+## Developing
 
-<div align="center" width="100%">
-    <h2>SchneileTV VOD Archiv</h2>
-</div>
+Copy [.env.example](.env.example) to `.env`.
 
-## 🐳 Deploy
+Install dependencies with `pnpm install` (or `npm install` or `yarn`), start a development server:
 
-Copy [.env.example](.env.example) to `.env` and change the values as needed.
-#### example `docker-compose.yml`
-```yml
-version: '3'
-services:
-    frontend:
-        container_name: archiv-frontend
-        build: .
-        ports:
-            - 8030:3000
-        restart: always
+```bash
+pnpm run dev
+
+# or start the server and open the app in a new browser tab
+pnpm run dev -- --open
 ```
 
 ## Building
-Install dependencies with `pnpm install`, start a development server with `pnpm run dev`:
 
 To create a production version of your app:
 
@@ -32,18 +21,10 @@ pnpm run build
 
 You can preview the production build with `pnpm run preview`.
 
-## 🚪 Reverse Proxy
-
-My preferred way is to use NGINX Proxy Manager with a `Advanced Configuration`.
+## Example caddy config
 
 ```
-location / {
-    proxy_pass http://192.168.10.36:8187;
-    add_header X-Content-Type-Options "nosniff";
-    add_header X-Frame-Options "SAMEORIGIN";
-    add_header X-XSS-Protection "1; mode=block";
-    add_header Referrer-Policy "same-origin";
-    add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate";
-    gzip on;
+archiv.schneile.tv {
+    reverse_proxy localhost:8030
 }
 ```

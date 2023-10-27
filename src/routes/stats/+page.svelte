@@ -18,10 +18,14 @@
         imagealt: 'SchneileTV Archiv OG Image'
     };
 
-    let chat = false;
-    let chart = false;
+    let chat = true;
+    let chart = true;
     let transcript = false;
     let ffz = false
+
+    function toggleChart() {
+        chart = !chart;
+    }
 
 </script>
 

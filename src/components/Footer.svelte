@@ -54,7 +54,7 @@
                     </li>
                     <li>
                         <a
-                            href="https://discord.gg/tdZkSp9Xde"
+                            href="https://discord.gg/buVmT4JX"
                             target="_blank"
                             rel="noopener noreferrer"
                             data-bs-toggle="tooltip"
@@ -148,10 +148,9 @@
     </div>
     {#if $page.url.hostname.startsWith('archiv.schneile.tv')}
         <script
-            async
-            defer
-            data-website-id="a39874de-f01c-409a-b640-8f3ffab56ac6"
-            src="https://analytics.galaxycrow.de/umami.js"
-        ></script>
+            defer 
+            data-domain="archiv.schneile.tv" 
+            src="https://p.galaxycrow.de/js/script.js">
+        </script>
     {/if}
 </footer>

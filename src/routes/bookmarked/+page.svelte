@@ -70,7 +70,7 @@
         {/if}
         {#if bookmarks?.vods.length === 0 && bookmarks?.clips.length === 0}
             <h1 class="display-4 fw-bolder p-0 m-0 mb-4 align-self-center">
-                <p>Keine Bookmarks gefunden</p>
+                <p>Keine Lesezeichen gefunden</p>
             </h1>
             <GridPlaceholder count="3" />
         {/if}
